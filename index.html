@@ -30,10 +30,11 @@
     <header class="header" id="header">
       <nav class="nav container">
         <a href="#" class="nav__logo">Matheus</a>
+
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a href="#home" class="nav__link"
+              <a href="#home" class="nav__link active-link"
                 ><i class="ri-home-5-line"></i>Home</a
               >
             </li>
@@ -123,11 +124,15 @@
             <div>
               <h3 class="homw__info-title">BIOGRAFIA</h3>
               <p class="home__info-descripition">
-                inoinuoiuoivbuyituyxrtrwzreybgiuhpoim,ouibnvytcvexrezx3w
+                Profissional graduado em Engenharia , atua como assistente de
+                engenharia , com conhecimentos em Desenvolvimento Front-End.
+                <br />
+                Possui conhecimento de linguagens JavaScript e TyperScript, além
+                das tecnologias API REST , React.Js, jQuery, Bootstrap, SASS.
               </p>
             </div>
             <div>
-              <h3 class="homw__info-title">CONTATTO</h3>
+              <h3 class="homw__info-title">CONTATO</h3>
               <p class="home__info-descripition">
                 Brasilía, DF <br />
                 matheuslourenco776@gmail.com <br />
@@ -135,7 +140,7 @@
               </p>
             </div>
             <div>
-              <h3 class="homw__info-title">Serviços</h3>
+              <h3 class="homw__info-title">SERVIÇOS</h3>
               <p class="home__info-descripition">
                 HTML <br />
                 CSS <br />
@@ -212,6 +217,41 @@
                 </div>
                 <h3 class="skills__name">Git</h3>
                 <span class="skills__subtitle">Basico</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img
+                    src="./assets/img/bootstrap-5-1.svg"
+                    alt="skills image"
+                  />
+                </div>
+                <h3 class="skills__name">Bootstrap</h3>
+                <span class="skills__subtitle">Intermediario</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./assets/img/jquery-4.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">jQuery</h3>
+                <span class="skills__subtitle">Intermediario</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./assets/img/sass-1.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Sass</h3>
+                <span class="skills__subtitle">Intermediario</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
+                  <img src="./assets/img/redux.svg" alt="skills image" />
+                </div>
+                <h3 class="skills__name">Redux</h3>
+                <span class="skills__subtitle">Intermediario</span>
               </div>
             </div>
           </div>
@@ -508,11 +548,131 @@
       </section>
 
       <!--==================== CONTACT ====================-->
-      <section class="contact section" id="contact"></section>
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid section__border">
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-chat-3-line"></i>Talk to me
+            </h3>
+
+            <div class="contact__info">
+              <div class="contact__data">
+                <span class="contact__data-title">Email</span>
+                <span class="contact__data-info"
+                  >matheuslourenco776@gmail.com</span
+                >
+              </div>
+
+              <div class="contact__data">
+                <span class="contact__data-title">Whatsapp</span>
+                <span class="contact__data-info">61-9.9370-0593</span>
+
+                <a href="" target="_blank" class="contact__button">
+                  Write me <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+
+              <div class="contact__data">
+                <span class="contact__data-title"></span>
+                <span class="contact__data-info"></span>
+
+                <a href="" target="_blank" class="contact__button">
+                  Write me <i class="ri-arrow-right-line"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">
+              <i class="ri-send-plane-line"></i> Write me your project
+            </h3>
+
+            <form action="" class="contact__form" id="contact_form">
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Names</label>
+                <input
+                  type="text"
+                  name="user_name"
+                  required
+                  placeholder="Write your names"
+                  class="contact__form-input"
+                  id="contact-name"
+                />
+              </div>
+
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Mail</label>
+                <input
+                  type="email"
+                  name="user_email"
+                  required
+                  placeholder="Write your Email"
+                  class="contact__form-input"
+                  id="contact-email"
+                />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag">Project</label>
+                <textarea
+                  name="user_project"
+                  placeholder="Write your project"
+                  id="contact-project"
+                  class="contact__form-input"
+                ></textarea>
+              </div>
+
+              <p class="contact__message" id="contact-message"></p>
+
+              <button type="submit" class="contact__button">
+                Submit <i class="ri-arrow-right-up-line"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!--==================== FOOTER ====================-->
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Matheus</h1>
+        <p>Front-end Developer</p>
+        <ul class="footer_list">
+          <li>
+            <a href="#home" class="footer__link">Home</a>
+          </li>
+          <li>
+            <a href="#skills" class="footer__link">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="footer__link">Projects</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a
+            href="https://www.linkedin.com/in/matheuslsouza/"
+            target="_blank"
+            class="footer__social-link"
+            ><i class="ri-linkedin-box-line"></i
+          ></a>
+          <a
+            href="https://github.com/matheuslsouza"
+            target="_blank"
+            class="footer__social-link"
+            ><i class="ri-github-line"></i
+          ></a>
+        </ul>
+        <span class="footer__copy">
+          &$169; Copyright Bedimcode. All rightss reserved
+        </span>
+      </div>
+    </footer>
 
     <!--========== SCROLL UP ==========-->
 
@@ -523,7 +683,10 @@
     <script src="./assets/js/swiper-bundle.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
   </body>

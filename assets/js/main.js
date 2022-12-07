@@ -70,9 +70,79 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
 });
 
 /*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById("contact-form"),
+  contactName = document.getElementById("contact-name"),
+  contactEmail = document.getElementById("contact-email"),
+  contactProject = document.getElementById("contact-project"),
+  contactMessage = document.getElementById("contact-message");
 
+const sendEmai = (e) => {
+  e.preventDefault;
+
+  //Check if the field has a value
+  if (
+    contactName.value === "" ||
+    contactEmail.value === "" ||
+    contactProject.value === ""
+  ) {
+    //add and remove color
+    contactMessage.classList.remove("color-blue");
+    contactMessage.classList.add("color-red");
+
+    //Show message
+    contactMesssage.textContent = "Write all the input fields ";
+  } else {
+    //serviceID - templateID - #form - publicKey
+    emailjs
+      .sendForm(
+        "service_8ii265v",
+        "template_85g6ftk",
+        "#contact-form",
+        "VQaq6RG_bXgUd7BNm"
+      )
+      .then(
+        () => {
+          //show message and add color
+          contactMessage.classList.add("color-blue");
+          contactMessage.textContent = "Message sent";
+
+          //Remove message after five seconds
+          setTimeout(() => {
+            contactMessage.textContent = "";
+          }, 5000);
+        },
+        (error) => {
+          alert("OOPS! SOMETHING HAS FAILED...", error);
+        }
+      );
+    //To clear the input field
+    contactName.value = "";
+    contacEmail.value = "";
+    contactProject.value = "";
+  }
+};
+contactForm.addEventListener("submit", sendEmai);
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll("section[id]");
 
+const scrollActive = () => {
+  const scrollY = window.pageYOffset;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight,
+      sectionTop = current.offsetTop - 58,
+      sectionId = current.getAttribute("id");
+    sectionClass = document.querySelector(
+      ".nav__menu a[href*=" + sectionId + "]"
+    );
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      sectionClass.classList.add("active-link");
+    } else {
+      sectionClass.classList.remove("active-link");
+    }
+  });
+};
+window.addEventListener("scroll", scrollActive);
 /*=============== SHOW SCROLL UP ===============*/
 
 /*=============== DARK LIGHT THEME ===============*/
