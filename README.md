@@ -1,5 +1,5 @@
 # 💼 Responsive Personal Portfolio Website
-## [Watch it on youtube](https://youtu.be/5-_2z-DdWng)
+
 ### 💼 Responsive Personal Portfolio Website
 
 - Responsive Personal Portfolio Website Design Using HTML CSS & JavaScript
