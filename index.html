@@ -7,7 +7,7 @@
     <!--=============== FAVICON ===============-->
     <link
       rel="shortcut icon"
-      href="assets/img/favicon.png"
+      href="assets/img/favicon-32x32.png"
       type="image/x-icon"
     />
 
@@ -23,7 +23,7 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Responsive portfolio website Chris - Bedimcode</title>
+    <title>Responsive portfolio Matheus</title>
   </head>
   <body>
     <!--==================== HEADER ====================-->
@@ -38,21 +38,25 @@
                 ><i class="ri-home-5-line"></i>Home</a
               >
             </li>
+
             <li class="nav__item">
               <a href="#skills" class="nav__link"
                 ><i class="ri-trophy-line"></i>Skills</a
               >
             </li>
+
             <li class="nav__item">
               <a href="#qualification" class="nav__link"
                 ><i class="ri-book-open-line"></i>Qualificação</a
               >
             </li>
+
             <li class="nav__item">
               <a href="#projects" class="nav__link"
                 ><i class="ri-image-line"></i>Projetos</a
               >
             </li>
+
             <li class="nav__item">
               <a href="#contact" class="nav__link"
                 ><i class="ri-chat-3-line"></i>Contato</a
@@ -68,7 +72,7 @@
 
         <div class="nav__buttons">
           <!--THEME CHANGE BUTTON-->
-          <i class="ri-moon-line change-theme" id="theme_button"></i>
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
 
           <!--TOOGGLE BUTTON-->
           <div class="nav__toggle" id="nav-toggle">
@@ -103,18 +107,18 @@
                 class="home__shape-circle"
               />
             </div>
-            <ul class="home_social">
+            <ul class="home__social">
               <a
                 href="https://www.linkedin.com/in/matheuslsouza/"
                 target="_blanck"
-                class="home_social-link"
+                class="home__social-link"
               >
                 <i class="ri-linkedin-box-line"></i>
               </a>
               <a
                 href="https://github.com/matheuslsouza"
                 target="_blanck"
-                class="home_social-link"
+                class="home__social-link"
                 ><i class="ri-github-line"></i>
               </a>
             </ul>
@@ -127,7 +131,7 @@
                 Profissional graduado em Engenharia , atua como assistente de
                 engenharia , com conhecimentos em Desenvolvimento Front-End.
                 <br />
-                Possui conhecimento de linguagens JavaScript e TyperScript, além
+                Tenho conhecimento de linguagens JavaScript e TyperScript, além
                 das tecnologias API REST , React.Js, jQuery, Bootstrap, SASS.
               </p>
             </div>
@@ -151,7 +155,7 @@
           </div>
 
           <!--==================== HOME INFO 2 ====================-->
-          <div class="home__infoe">
+          <div class="home__info">
             <div>
               <h3 class="home__info-title">TEMPO DE EXPERIENCIA</h3>
               <p class="home__infoe-number">1 ANO</p>
@@ -205,6 +209,17 @@
 
               <div class="skills__data">
                 <div class="skills__blob">
+                  <img
+                    src="./assets/img/typescript.svg"
+                    alt="skills image"
+                  />
+                </div>
+                <h3 class="skills__name">TyperScript</h3>
+                <span class="skills__subtitle">Basico</span>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__blob">
                   <img src="./assets/img/react-2.svg" alt="skills image" />
                 </div>
                 <h3 class="skills__name">React</h3>
@@ -227,7 +242,7 @@
                   />
                 </div>
                 <h3 class="skills__name">Bootstrap</h3>
-                <span class="skills__subtitle">Intermediario</span>
+                <span class="skills__subtitle">Basico</span>
               </div>
 
               <div class="skills__data">
@@ -235,7 +250,7 @@
                   <img src="./assets/img/jquery-4.svg" alt="skills image" />
                 </div>
                 <h3 class="skills__name">jQuery</h3>
-                <span class="skills__subtitle">Intermediario</span>
+                <span class="skills__subtitle">Basico</span>
               </div>
 
               <div class="skills__data">
@@ -243,16 +258,18 @@
                   <img src="./assets/img/sass-1.svg" alt="skills image" />
                 </div>
                 <h3 class="skills__name">Sass</h3>
-                <span class="skills__subtitle">Intermediario</span>
+                <span class="skills__subtitle">Basico</span>
               </div>
 
-              <div class="skills__data">
+              <!--
+<div class="skills__data">
                 <div class="skills__blob">
                   <img src="./assets/img/redux.svg" alt="skills image" />
                 </div>
                 <h3 class="skills__name">Redux</h3>
-                <span class="skills__subtitle">Intermediario</span>
+                <span class="skills__subtitle">Basico</span>
               </div>
+              -->
             </div>
           </div>
           <!--==================== SKILLS 2 ====================-->
@@ -313,6 +330,24 @@
                   >Brasília - Centro Universitario do Distro Federal</span
                 >
                 <span class="qualification__year">2015 - 2021</span>
+              </div>
+
+              <div>
+                <h3 class="qualification__name">
+                  JavaScript Algorithms and Data Structures
+                </h3>
+                <span class="qualification__country">California - freeCodeCamp</span>
+                  </span
+                >
+                <span class="qualification__year">2022 - 2022</span>
+              </div>
+
+              <div>
+                <h3 class="qualification__name">Responsive Web Design</h3>
+                <span class="qualification__country">
+                  California - freeCodeCamp</span
+                >
+                <span class="qualification__year">2022 - 2022</span>
               </div>
             </div>
           </div>
@@ -402,7 +437,7 @@
       <!--==================== PROJECTS ====================-->
       <section class="projects section" id="projects">
         <h2 class="section__title">Projetos</h2>
-        <span class="section__subtitle">Projetos recenter</span>
+        <span class="section__subtitle">Projetos recentes</span>
 
         <div class="container section__border">
           <div class="projects__container swiper">
@@ -415,7 +450,7 @@
                   class="projects__img"
                 />
                 <div>
-                  <span class="projects__subtitle">React, Api</span>
+                  <span class="projects__subtitle">React, API-Rest</span>
                   <h1 class="projects__title">Film List</h1>
                   <a href="#" class="projects__button"
                     >Visualizar <i class="ri-arrow-right-line"></i
@@ -548,14 +583,16 @@
       </section>
 
       <!--==================== CONTACT ====================-->
-      <section class="contact section" id="contact">
-        <h2 class="section__title">Contact Me</h2>
-        <span class="section__subtitle">Get in touch</span>
+      <!--
+ <section class="contact section" id="contact">
+        <h2 class="section__title">Contate-me</h2>
+        <span class="section__subtitle">
+          Entrar em contato</span>
 
         <div class="contact__container container grid section__border">
           <div class="contact__content">
             <h3 class="contact__title">
-              <i class="ri-chat-3-line"></i>Talk to me
+              <i class="ri-chat-3-line"></i>Fale comigo
             </h3>
 
             <div class="contact__info">
@@ -568,21 +605,14 @@
 
               <div class="contact__data">
                 <span class="contact__data-title">Whatsapp</span>
-                <span class="contact__data-info">61-9.9370-0593</span>
+                <span class="contact__data-info">(61)-9.9370-0593</span>
 
                 <a href="" target="_blank" class="contact__button">
                   Write me <i class="ri-arrow-right-line"></i>
                 </a>
               </div>
 
-              <div class="contact__data">
-                <span class="contact__data-title"></span>
-                <span class="contact__data-info"></span>
-
-                <a href="" target="_blank" class="contact__button">
-                  Write me <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
+              
             </div>
           </div>
 
@@ -635,13 +665,15 @@
           </div>
         </div>
       </section>
+      -->
+     
     </main>
 
     <!--==================== FOOTER ====================-->
     <footer class="footer">
       <div class="footer__container container">
         <h1 class="footer__title">Matheus</h1>
-        <p>Front-end Developer</p>
+        <p>Front-End Developer</p>
         <ul class="footer_list">
           <li>
             <a href="#home" class="footer__link">Home</a>
@@ -675,7 +707,9 @@
     </footer>
 
     <!--========== SCROLL UP ==========-->
-
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
     <!--=============== SCROLLREVEAL ===============-->
     <script src=""></script>
 
